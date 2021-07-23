@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-labels */
+/* eslint-disable no-labels */
+/* eslint-disable no-whitespace-before-property */
 /* eslint-disable react/jsx-pascal-case */
 /* eslint-disable no-unused-vars */
 import "./App.css";
@@ -15,20 +18,30 @@ import Faq from "./Components/Faq";
 import QuestionList from "./Components/QuestionList";
 import EditFaq from "./Components/EditFaq";
 import EmployeList from "./Components/EmployeList";
-import EmployeeContextProvider from './/context/Empcontext';
+import EmployeeContextProvider from ".//context/Empcontext";
+import { useForm } from "react-hook-form";
+import { useState } from "react";
+import Register from "./Components/Register";
+
+
 function App() {
   return (
-    <div className="container-xl">
-      <div className="table-responsive">
-        <div className="table-wrapper">
-        <EmployeeContextProvider>
-            <EmployeList />
-        </EmployeeContextProvider>
-         
-        </div>
-      </div>
+    <div>
+       <Register />  
     </div>
+    //=============================================================
+    //crud operation
+    // <div className="container-xl">
+    //   <div className="table-responsive">
+    //     <div className="table-wrapper">
+    //     <EmployeeContextProvider>
+    //         <EmployeList />
+    //     </EmployeeContextProvider>
 
+    //     </div>
+    //   </div>
+    // </div>
+    //======================================================
     // <div className="App">
     // <Router>
     //      <Navbar />
@@ -51,6 +64,7 @@ function App() {
     // </Router>
 
     // </div>
+    //=================================================================
   );
 }
 
