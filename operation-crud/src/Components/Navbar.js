@@ -25,6 +25,7 @@ const Navbar = () => {
             </ul>
            
           </div>
+          <Link  className="btn btn-outline-light mr-2" to ="/faq">FAQ</Link>
           <Link  className="btn btn-outline-light" to ="/adduser/add">Add User</Link>
         </div>
       </nav>
@@ -33,5 +34,11 @@ const Navbar = () => {
 
     
 }
+
+
+
+
+
+
 
 export default Navbar;

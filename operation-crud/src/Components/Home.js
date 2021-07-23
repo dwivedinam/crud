@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from 'react';
+import React, { useState, useEffect, Component,  } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -7,9 +7,7 @@ const Home = () => {
     const [users, setUser] = useState([]);
 
     useEffect(() => {
-
         loadUsers();
-
 
     }, [])
 
@@ -25,7 +23,7 @@ const Home = () => {
     }
     return (
         <div>
-            <h2>Home COmponent</h2>
+            <h2>Home Component</h2>
             <table className="table border shadow">
                 <thead className="thead-dark">
                     <tr>
